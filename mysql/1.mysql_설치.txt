@@ -1,0 +1,97 @@
+================================================
+mysql 설치 (요약)
+================================================
+
+brew install mysql  # MySQL을 설치
+
+mysql.server start  # MySQL을 시작
+
+mysql_secure_installation   # MySQL을 시작 후 기본 설정을 시작
+
+mysql -u root -p
+
+mysql.server stop
+
+brew install 
+  
+
+  
+  
+  mysql -u root -p
+
+  
+  # remove mysql
+
+        brew services stop mysql
+        brew uninstall mysql
+        rm -rf /opt/homebrew/var/mysql
+
+        sudo rm -rf /usr/local/var/mysql
+        sudo rm -rf /usr/local/bin/mysql*
+        sudo rm -rf /usr/local/Cellar/mysql
+
+
+
+================================================
+mysql 설치
+================================================
+https://velog.io/@heiswicked/M1에서-MySQL-설치brew로
+https://velog.io/@haleyjun/MySQL-Mac에-MySQL-설치하기-M1칩
+================================================
+
+brew install cask
+
+brew list
+
+brew install openssl
+
+brew services list
+
+
+brew install mysql  # MySQL 최신버젼(8.0) 설치
+
+# brew install mysql@5.6   <- MySQL 5.6 설치
+# brew install mysql@5.7   <- MySQL 5.7 설치
+
+
+mysql.server start  # MySQL 시작
+
+mysql_secure_installation   # MySQL 시작 후 기본설정 시작
+
+# 비밀번호 복잡도 검사 과정 (n)
+# 비밀번호 입력 & 확인
+# 익명 사용자 삭제 (y)
+# 원격 접속 허용하지 않을 것인가? (y)
+# test DB 삭제 (n)
+# previlege 테이블을 다시 로드할 것인지 (y)
+# 설정을 마치면 All done! 메세지가 출력됩니다.
+
+
+mysql -u root -p
+
+  mysql> status
+
+  mysql> exit
+
+mysql.server stop  # MySQL 종료
+
+
+# brew services start mysql   # MySQL 서버가 재부팅 상관없이 켜져있게
+
+
+================================================
+mysql workbench 설치
+================================================
+https://dev.mysql.com/downloads/installer/
+================================================
+
+brew install mysql-client
+
+brew install mysqlworkbench --cask
+
+
+================================================
+테이블 생성
+================================================
+
+mysql -u root -p 로 접속 후 실행
